@@ -28,17 +28,17 @@
     
 }
 
-.navigation__link {
-    display: block;
-    color: var(--basic-text-color);
-    text-decoration: none;
-    position: relative;
-    padding-bottom: 32px;
-    padding-top: 32px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+// .navigation__link {
+//     display: block;
+//     color: var(--basic-text-color);
+//     text-decoration: none;
+//     position: relative;
+//     padding-bottom: 32px;
+//     padding-top: 32px;
+//     transition-property: color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
 
 .navigation__link:hover,
 .navigation__link:focus {
