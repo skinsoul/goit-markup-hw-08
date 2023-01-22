@@ -1,0 +1,125 @@
+.header {
+    margin: 0 auto;
+    border-bottom: 1px solid #ececec
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+    gap: 91px;
+    flex-grow: 1;
+}
+
+.navigation__list {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.navigation__link {
+    display: block;
+    color: var(--basic-text-color);
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+    color: var(--accent-text-color);
+}
+
+.navigation__link--selected {
+    color: var(--accent-text-color);
+}
+
+.navigation__link--selected::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-text-color);
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    border-radius: 2px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__contacts {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.contacts__mail {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts__tel {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.contacts__mail-icon {
+    fill: var(--secondary-text-color);
+    width: 16px;
+    height: 12px;
+}
+
+.contacts__tel-icon {
+    fill: var(--secondary-text-color);
+    width: 10px;
+    height: 16px;
+}
+
+/* contact info */
+.header__contacts {
+    font-size: 14px;
+    list-style: none;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+}
+
+.contacts__tel,
+.contacts__mail,
+.contacts__mail-icon,
+.contacts__tel-icon {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__mail:hover .contacts__mail-icon,
+.contacts__mail:hover,
+.contacts__mail:focus,
+.contacts__mail:focus .contacts__mail-icon,
+.contacts__tel:hover,
+.contacts__tel:focus,
+.contacts__tel:hover .contacts__tel-icon,
+.contacts__tel:focus .contacts__tel-icon {
+    fill: var(--accent-text-color);
+    color: var(--accent-text-color);
+}

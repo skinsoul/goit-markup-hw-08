@@ -1,0 +1,13 @@
+body {
+    color: var(--basic-text-color);
+    background-color: #ffffff;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: auto;
+}

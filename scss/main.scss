@@ -1,0 +1,24 @@
+            /* Utils */
+@import './utils/fonts';
+@import './utils/variables';
+
+            /* Base */
+@import './base/base';
+@import './base/reset';
+
+            /* Components */
+@import './components/logo';
+@import './components/buttons';
+@import './components/modal';
+
+            /* Layot */
+@import './layout/container';
+@import './layout/header';
+@import './layout/primary-section';
+@import './layout/advanteges-section';
+@import './layout/about-section';
+@import './layout/team-section';
+@import './layout/clients-section';
+@import './layout/filter-section';
+@import './layout/portfolio-section';
+@import './layout/footer';

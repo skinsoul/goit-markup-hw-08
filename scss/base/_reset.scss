@@ -1,0 +1,15 @@
+h1,
+h2,
+h3,
+p,
+ul {
+    padding: 0;
+    margin: 0;
+}
+        /* delete list dot */
+.list,
+.filter,
+.footer__list,
+.clients__list {
+    list-style: none;
+}

@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section,
+.advatages,
+.section__filter,
+.about,
+.team,
+.clients {
+    margin: 0 auto;
+    padding-bottom: 94px;
+}
+
+.section__filter,
+.advatages,
+.team,
+.clients {
+    padding-top: 94px;
+}
+
+.container .list {
+    display: flex;
+}

@@ -1,0 +1,124 @@
+.footer {
+    margin: 0 auto;
+    padding: 60px 0;
+    background-color: var(--background-color);
+}
+
+.footer__info {
+    margin-right: 80px;
+}
+
+
+.footer__contacts {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+
+.footer__address {
+    color: var(--title-text-color);
+    margin: 0 auto;
+    margin-bottom: 9px;
+}
+
+.footer__mail,
+.footer__tel {
+    display: block;
+    color: rgba(255, 255, 255, 60%);
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.footer__mail-list {
+    margin-bottom: 9px;
+}
+
+.social__item {
+    color: var(--button-color-portfolio);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    line-height: 1.17;
+    text-transform: uppercase;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__social {
+    justify-content: center;
+    align-items: center;
+    margin-right: 93px;
+}
+
+.social__item {
+    margin-bottom: 20px;
+}
+
+.social__logos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-self: start;
+}
+
+.social__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    fill: var(--title-text-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__icon:hover,
+.social__icon:focus {
+    fill: var(--title-text-color);
+    background-color: var(--accent-text-color);
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer__item {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--button-color-portfolio);
+    margin-bottom: 20px;
+}
+
+.form input {
+    padding: 15px 16px;
+    width: 358px;
+    background-color: var(--background-color);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--button-color-portfolio);
+    outline: none;
+}
+
+.form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
