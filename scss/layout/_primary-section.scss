@@ -1,5 +1,5 @@
 .primary {
-    padding: 200px 0;
+    padding: 118px 0;
     margin: 0 auto;
     text-align: center;
     background-color: var(--background-color);
@@ -8,10 +8,37 @@
         rgba(47, 48, 58, 0.4)),
          url(../images/main-img.jpg);
     background-size: cover;
-    max-width: 1600px;
+    max-width: 480px;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+@media screen and (min-width: 768px) {
+    .primary {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/main-img.jpg);
+        width: 768px;
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    .primary {
+        padding: 118px 0;
+        margin: 0 auto;
+        text-align: center;
+        background-color: var(--background-color);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/main-img.jpg);
+        background-size: cover;
+        max-width: 1200px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+}
+
 .primary__title {
     margin: 0 auto;
     margin-bottom: 30px;
