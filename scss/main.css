@@ -632,7 +632,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .contacts__mail {
-    margin-bottom: 0;
+    margin-bottom: 0%;
   }
 }
 .contacts__tel {
