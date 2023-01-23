@@ -47,8 +47,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 8px;
     border-radius: 4px;
     background-color: var(--title-text-color);
@@ -57,13 +57,33 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+    .modal {
+        width: 528px;
+        height: 581px;
+    }
+    
+}
+
 .modal__title {
     padding-top: 32px;
+    padding-right: 10px;
+    padding-left: 10px;
     font-size: 20px;
     font-weight: 700;
-    line-height: 1.17;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+    .modal__title {
+        line-height: 1.17;
+        max-width: none;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
 }
 
 .modal__form {
@@ -147,11 +167,23 @@
 
 .modal__check {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+    .modal__check {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: var(--secondary-text-color);
+    }
+    
 }
 
 .modal__icon-check {

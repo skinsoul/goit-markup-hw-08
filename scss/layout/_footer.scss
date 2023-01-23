@@ -4,10 +4,22 @@
     background-color: var(--background-color);
 }
 
-.footer__info {
-    margin-right: 80px;
+@media screen and (min-width: 768px) {
+    .footer__info {
+        text-align: center;
+        margin-left: 76px;
+        margin-right: 165px;
+        margin-bottom: 60px;
+    }
 }
 
+@media screen and (min-width: 1200px) {
+    .footer__info {
+        margin-right: 80px;
+        margin-left: 0;
+    }
+    
+}
 
 .footer__contacts {
     font-size: 14px;
@@ -19,7 +31,21 @@
 .footer__address {
     color: var(--title-text-color);
     margin: 0 auto;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__address {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__address {
+        margin-bottom: 9px;
+        margin-left: 0;
+    }
 }
 
 .footer__mail,
@@ -28,6 +54,38 @@
     color: rgba(255, 255, 255, 60%);
     text-decoration: none;
     margin: 0 auto;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__mail,
+    .footer__tel {
+        display: block;
+        color: rgba(255, 255, 255, 60%);
+        text-decoration: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__mail,
+    .footer__tel {
+        display: block;
+        color: rgba(255, 255, 255, 60%);
+        text-decoration: none;
+        margin: 0 auto;
+        text-align: left;
+    }
+    
+}
+
+@media screen and (min-width: 768) {
+    .footer__list {
+        text-align: center;
+    }
 }
 
 .footer__mail-list {
@@ -43,27 +101,69 @@
     text-transform: uppercase;
 }
 
-.footer__container {
-    display: flex;
-    align-items: baseline;
+@media screen and (min-width: 768px) {
+    .footer__information {
+        max-width: 768px;
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-around;
+    }
+    
+}
+.footer__information {
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__container {
+        display: flex;
+        align-items: baseline;
+    }
 }
 
 .footer__social {
-    justify-content: center;
     align-items: center;
-    margin-right: 93px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__social {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__social {
+        justify-content: center;
+        margin-right: 93px;
+        text-align: left;
+        margin-left: 0;
+    }
 }
 
 .social__item {
     margin-bottom: 20px;
+    margin-top: 58px;
 }
 
 .social__logos {
     display: flex;
     gap: 10px;
     align-items: center;
-    justify-self: start;
+    justify-self: center;
+    justify-content: center;
+    margin-bottom: 60px;
 }
+
+@media screen and (min-width: 1200px) {
+    .social__logos {
+            justify-self: start;
+        } 
+}
+
 
 .social__icon {
     display: flex;
@@ -86,9 +186,25 @@
 }
 
 .form {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .form {
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .form {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    
 }
 
 .footer__item {
@@ -97,20 +213,47 @@
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     color: var(--button-color-portfolio);
     margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+    .footer__item {
+        text-align: left;
+    }
+}
 .form input {
     padding: 15px 16px;
-    width: 358px;
+    width: 100%;
     background-color: var(--background-color);
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: var(--button-color-portfolio);
     outline: none;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .form input {
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        width: 450px;
+        margin-bottom: 0;
+        margin-left: 144px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .form input {
+        width: 358px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    
 }
 
 .form input::placeholder {

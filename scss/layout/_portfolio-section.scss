@@ -1,22 +1,50 @@
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: block;
     align-content: center;
 }
+
+@media screen and (min-width: 768px) {
+    .portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-content: center;
+    }
+    
+}
+// @media screen and (min-width: 1200px) {
+//     .portfolio {
+//         display: flex;
+//         flex-wrap: wrap;
+//         gap: 30px;
+//         align-content: center;
+//     }
+// }
 
 .portfolio__link {
     text-decoration: none;
 }
 
 .portfolio__list {
-    flex-basis: calc((100% - 60px) / 3);
     text-align: left;
-    gap: 30px;
     padding: 0;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+    .portfolio__list {
+        flex-basis: calc((100% - 30px) / 2);
+        margin-bottom: 0;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+    .portfolio__list {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+    
 }
 
 .portfolio__list:hover,
@@ -38,8 +66,16 @@
     height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
 
-    transform: translateY(295px);
+    transform: translateY(360px);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+    .portfolio__wrap::before {
+        transform: translateY(295px);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
 }
 
 .portfolio__list:hover .portfolio__wrap::before,
@@ -61,18 +97,39 @@
     text-align: left;
     display: flex;
 
-    transform: translateY(295px);
+    transform: translateY(360px);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+    .portfolio__info {
+        transform: translateY(295px);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+}
+
 .portfolio__picture {
-    display: flex;
-    max-width: 370px;
+    display: block;
+    max-width: 450px;
     border-style: none;
 }
 
+@media screen and (min-width: 768px) {
+    .portfolio__picture {
+        display: flex;
+        max-width: 354px;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+    .portfolio__picture {
+        max-width: 370px;
+    }
+}
+
 .portfolio__title {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
     line-height: 2;
     letter-spacing: 0.06em;

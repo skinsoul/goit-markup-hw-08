@@ -5,30 +5,58 @@
     padding: 0 15px;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     .container {
         max-width: 1200px;
-    }
-    
+    }  
 }
 
 .section,
 .advatages,
 .section__filter,
-.about,
 .team,
 .clients {
     margin: 0 auto;
-    padding-bottom: 94px;
+    padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+    .section,
+    .advatages,
+    .section__filter,
+    .about,
+    .team,
+    .clients {
+        padding-bottom: 94px;
+    }
+    
 }
 
 .section__filter,
 .advatages,
 .team,
 .clients {
-    padding-top: 94px;
+    padding-top: 60px;
 }
 
-.container .list {
-    display: flex;
+@media screen and (min-width: 1200px) {
+    .section__filter,
+    .advatages,
+    .team,
+    .clients {
+        padding-top: 94px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .container .list {
+        display: flex;
+    }
 }
