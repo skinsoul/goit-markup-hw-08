@@ -618,7 +618,6 @@ ul {
     gap: 50px;
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
     margin-left: 0;
   }
 }
@@ -632,7 +631,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .contacts__mail {
-    margin-bottom: 0%;
+    margin-bottom: 0;
   }
 }
 .contacts__tel {
