@@ -29,7 +29,7 @@
 
 @media screen and (min-width: 1200px) {
     .navigation__list {
-        gap: 51px;
+        gap: 50px;
     }
 }
 
@@ -87,6 +87,8 @@
         gap: 50px;
         display: flex;
         align-items: center;
+        flex-wrap: nowrap;
+        margin-left: 0;
     }
 }
 
@@ -96,6 +98,12 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+    .contacts__mail {
+        margin-bottom: 0;
+    }
 }
 
 .contacts__tel {
