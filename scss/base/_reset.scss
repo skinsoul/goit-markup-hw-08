@@ -8,8 +8,12 @@ ul {
 }
         /* delete list dot */
 .list,
+.card__logo,
 .filter,
 .footer__list,
+.mobile-menu,
+.mobile-menu__list,
+.mobile-menu__contacts,
 .clients__list {
     list-style: none;
 }

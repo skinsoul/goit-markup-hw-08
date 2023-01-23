@@ -4,12 +4,16 @@
     background-color: var(--background-color);
 }
 
+.footer__info {
+    margin-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) {
     .footer__info {
         text-align: center;
-        margin-left: 76px;
-        margin-right: 165px;
-        margin-bottom: 60px;
+        // margin-left: 76px;
+        // margin-right: 165px;
+        margin-bottom: 0;
     }
 }
 
@@ -17,8 +21,8 @@
     .footer__info {
         margin-right: 80px;
         margin-left: 0;
+        margin-bottom: 0;
     }
-    
 }
 
 .footer__contacts {
@@ -67,7 +71,6 @@
         margin: 0 auto;
         text-align: center;
     }
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -78,8 +81,7 @@
         text-decoration: none;
         margin: 0 auto;
         text-align: left;
-    }
-    
+    }    
 }
 
 @media screen and (min-width: 768) {
@@ -109,11 +111,16 @@
         flex-wrap: wrap;
         text-align: center;
         justify-content: space-around;
+        margin-bottom: 60px;
     }
-    
 }
-.footer__information {
+
+@media screen and (min-width: 1200px) {
+    .footer__information {
+        margin-right: 93px;
+    }
 }
+
 
 @media screen and (min-width: 1200px) {
     .footer__container {
@@ -125,20 +132,19 @@
 .footer__social {
     align-items: center;
     text-align: center;
-    margin: 0 auto;
+    // margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
     .footer__social {
         text-align: center;
-        margin-left: 0;
+        // margin-left: 0;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .footer__social {
         justify-content: center;
-        margin-right: 93px;
         text-align: left;
         margin-left: 0;
     }
@@ -146,7 +152,6 @@
 
 .social__item {
     margin-bottom: 20px;
-    margin-top: 58px;
 }
 
 .social__logos {
@@ -162,8 +167,9 @@
     .social__logos {
             justify-self: start;
         } 
+    .footer__subs {
+    }
 }
-
 
 .social__icon {
     display: flex;
@@ -202,9 +208,8 @@
     .form {
         display: flex;
         align-items: center;
-        gap: 12px;
+        justify-content: right;
     }
-    
 }
 
 .footer__item {
@@ -252,6 +257,7 @@
         width: 358px;
         margin-bottom: 0;
         margin-left: 0;
+        margin-right: 12px;
     }
     
 }

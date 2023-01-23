@@ -65,19 +65,25 @@
     background-image: url(../images/astronaut.svg);
 }
 
+@media screen and (max-width: 767px) {
+    .advatages__icon-laptop,
+    .advatages__icon-clock,
+    .advatages__icon-antenna {
+        margin-bottom: 30px;
+    }
+}
+
 .advatages__text {
     max-width: 450px;
     font-size: 14px;
     color: var(--secondary-text-color);
     line-height: 1.71;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
     .advatages__text {
         max-width: 354px;
-        margin-bottom: 0;
     }
 }
 

@@ -7,7 +7,6 @@
     display: flex;
     align-items: center;
     gap: 91px;
-    flex-grow: 1;
 }
 
 .navigation__list {
@@ -65,6 +64,12 @@
     left: 0;
     border-radius: 2px;
 }
+@media screen and (min-width: 1200px) {
+    .navigation__link--selected::after {
+        bottom: -3px;
+    }
+}
+
 
 .header__container {
     display: flex;
@@ -87,6 +92,7 @@
         gap: 50px;
         display: flex;
         align-items: center;
+        margin-left: auto;
     }
 }
 
@@ -150,9 +156,7 @@
 @media screen and (min-width: 1200px) {
     .header__contacts {
         font-size: 14px;
-
     }
-    
 }
 
 .contacts__tel,
@@ -176,4 +180,24 @@
 .contacts__tel:focus .contacts__tel-icon {
     fill: var(--accent-text-color);
     color: var(--accent-text-color);
+}
+
+.header__burger {
+    display: flex;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #fff;
+}
+
+@media screen and (min-width:767px) {
+    .header__burger {
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
 }
