@@ -118,5 +118,8 @@
 <symbol id="icon-check" viewBox="0 0 42 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.263 15.205l-0.22-0.21-3.307 3.132 11.651 11.114 24.477-23.351-3.285-3.134-21.192 20.197-8.124-7.75z"></path>
 </symbol>
+<symbol id="icon-menu_burg" viewBox="0 0 40 40">
+<path d="M8 14.667v-2.667h24v2.667h-24zM8 21.333h24v-2.667h-24v2.667zM8 28h24v-2.667h-24v2.667z"></path>
+</symbol>
 </defs>
 </svg>

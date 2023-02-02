@@ -12,7 +12,6 @@
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
 </head>
 
 <body>
@@ -42,8 +41,14 @@
                                 </use>
                             </svg>
                             +38 096 111 11 11
-                        </a></li>
+                        </a>
+                    </li>
                 </ul>
+                <button class="header__burger js-open-menu" type="button">
+                    <svg width="40" height="40">
+                        <use href="./images/icons.svg#icon-menu_burg"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -223,32 +228,40 @@
                 </div>
                 <div class="footer__social">
                     <p class="social__item">Приєднуйтесь</p>
-                    <div class="social__logos">
-                        <a class="social__icon" href="#">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#icon-instagram">
-                                </use>
-                            </svg>
-                        </a>
-                        <a class="social__icon" href="#">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#icon-twitter">
-                                </use>
-                            </svg>
-                        </a>
-                        <a class="social__icon" href="#">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#icon-facebook">
-                                </use>
-                            </svg>
-                        </a>
-                        <a class="social__icon" href="#">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#icon-linkedin">
-                                </use>
-                            </svg>
-                        </a>
-                    </div>
+                    <ul class="social__logos">
+                        <li>
+                            <a class="social__icon" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social__icon" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social__icon" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social__icon" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-linkedin">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="footer__subs">
@@ -266,5 +279,36 @@
             </div>
         </div>
     </footer>
+    <div class="mobile-menu js-menu-container">
+        <div class="mobile__container">
+            <button class="mobile-menu__close js-close-menu" type="button">
+                <svg class="mobile-menu__close" width="18" height="18">
+                    <use href="./images/icons.svg#icon-close">
+                    </use>
+                </svg>
+            </button>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__marg"><a class="mobile-menu__link" href="./index.html">Студія</a></li>
+                <li class="mobile-menu__marg"><a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a></li>
+                <li><a class="mobile-menu__link" href="./index.html">Контакти</a></li>
+            </ul>
+            <ul class="mobile-menu__contacts">
+                <li class="mobile__tel"><a class="mobile-menu__tel" href="tel:+380961111111">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li><a class="mobile-menu__mail" href="mailto:info@devstudio.com?">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+            <a class="mobile-menu__social" href="">Instagram &nbsp &#921; &nbsp</a>
+            <a class="mobile-menu__social" href="">Twitter &nbsp &#921; &nbsp</a>
+            <a class="mobile-menu__social" href="">Facebook &nbsp &#921; &nbsp</a>
+            <a class="mobile-menu__social" href="">LinkedIn</a>
+    
+        </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

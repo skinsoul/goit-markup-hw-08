@@ -103,6 +103,10 @@
     text-transform: uppercase;
 }
 
+.footer__information {
+    margin-bottom: 60px;
+}    
+
 @media screen and (min-width: 768px) {
     .footer__information {
         max-width: 768px;
@@ -111,13 +115,13 @@
         flex-wrap: wrap;
         text-align: center;
         justify-content: space-around;
-        margin-bottom: 60px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .footer__information {
         margin-right: 93px;
+        margin-bottom: 0;
     }
 }
 
@@ -132,7 +136,6 @@
 .footer__social {
     align-items: center;
     text-align: center;
-    // margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -160,7 +163,6 @@
     align-items: center;
     justify-self: center;
     justify-content: center;
-    margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {

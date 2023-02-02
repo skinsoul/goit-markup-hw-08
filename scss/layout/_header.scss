@@ -185,12 +185,14 @@
 .header__burger {
     display: flex;
     position: fixed;
+    align-items: center;
+    justify-content: center;
     top: 10px;
     right: 15px;
     width: 40px;
     height: 40px;
     border: none;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
 }
 
 @media screen and (min-width:767px) {
