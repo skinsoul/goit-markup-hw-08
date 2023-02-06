@@ -6,7 +6,7 @@
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-         url(/images/main_img_480.jpg);
+         url(./images/main_img_480.jpg);
     background-size: cover;
     max-width: 480px;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@
         (min-resolution: 96dpi) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(/images/main_img_480@2x.jpg);
+                url(./images/main_img_480@2x.jpg);
         }
 }
 
@@ -24,14 +24,14 @@
     .primary {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(/images/main_img_768.jpg);
+            url(../images/main_img_768.jpg);
         max-width: 768px;
-        
+
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 96dpi) {
                 background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
-                    url(/images/main_img_768@2x.jpg);
+                    url(../images/main_img_768@2x.jpg);
             }
     }
 }
